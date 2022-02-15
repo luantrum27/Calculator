@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="nhapVao" id="input">
+
+        <div class="keyBoard">
+            <button class="number" value="7" onclick="setText(7)" id="7">7</button>
+            <button class="number" value="8" onclick="setText(8)" id="8">8</button>
+            <button class="number" value="9" onclick="setText(9)" id="9">9</button>
+            <button class="number" id="chia" value="/" onclick="setText('/')">/</button>
+            <button class="number" value="4" onclick="setText(4)" id="4">4</button>
+            <button class="number" value="5" onclick="setText(5)" id="5">5</button>
+            <button class="number" value="6" onclick="setText(6)" id="6">6</button>
+            <button class="number" id="nhan" value="*" onclick="setText('*')">x</button>
+            <button class="number" value="1" onclick="setText(1)" id="1">1</button>
+            <button class="number" value="2" onclick="setText(2)" id="2">2</button>
+            <button class="number" value="3" onclick="setText(3)" id="3">3</button>
+            <button class="number" value="-" id="-" onclick="setText('-')">-</button>
+            <button class="number" value="0" onclick="setText(0)" id="0">0</button>
+            <button class="number" value="." id="cham" onclick="setText('.')">•</button>
+            <button class="number" value="+" id="cong" onclick="setText('+')">+</button>
+            <button class="number" id="bang" onclick="Result()" style="background-color: #f5a34d; color: white">=</button>
+            <div class="remove">
+                <button class="remove-button ac" onclick="AC()">AC</button>
+                <button class="remove-button c" onclick="C()">Back</button>
+                <button class="remove-button c" onclick="Ans()">Ans</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
